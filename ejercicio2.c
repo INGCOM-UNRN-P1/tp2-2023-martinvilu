@@ -1,5 +1,5 @@
 /*
-Trabajo Practico 2 - Ejercicio 1
+Trabajo Practico 2 - Ejercicio 2
 Profe Martín
 Comision Profes - 2023
 Programacion 1 - Ingenieria en computacion
@@ -8,32 +8,30 @@ Programacion 1 - Ingenieria en computacion
 #include <stdio.h>
 
 /*
-Consigna: Contador de dígitos
-Escribe una función que cuente y muestre en pantalla la cantidad de dígitos en un número entero positivo.
+Consigna: Suma de dígitos
+Diseña e implementa una función que calcule la suma de los dígitos de un número entero positivo pasado como parámetro.
 */
 
 unsigned int valor_absoluto(int numero);
 int signo(int numero);
 
-
 /*
-Esta funcion cuenta los digitos de un numero entero
-@param el numero a procesar
-@returns cuantos digitos tiene el valor pasado, sin importar su signo.
-Precondiciones: un numero entero
-Postcondiciones: un numero que será menor al original pero mayor o igual a 0.
-(La funcion considera 0 no como un digito)
+descripcion
+@param nombre descripcion
+@returns descripcion retorno
+Precondiciones de la funcion
+Postcondiciones de la funcion
 */
-int cuenta_digitos(int numero)
+int suma_digitos(int numero)
 {
-    int contador = 0;
+    int suma = 0;
     numero = valor_absoluto(numero);
     while (numero > 0)
     {
+        suma = suma + (numero % 10);
         numero = numero / 10;
-        contador++;
     }
-    return contador;
+    return suma;
 }
 
 /*
@@ -83,10 +81,10 @@ int main()
     int casos[CASOS][2] = {
         {0, 0 },
         {1, 1},
-        {10, 2},
-        {100, 3},
-        {-1234, 4},
-        {54321, 5}
+        {10, 1},
+        {100, 1},
+        {-1234, 10},
+        {54321, 15}
     };
 
     for (int i = 0; i < CASOS; i++)
@@ -94,9 +92,9 @@ int main()
         int numero = casos[i][0];
         int esperado = casos[i][1];
 
-        int resultado = cuenta_digitos(numero);
+        int resultado = suma_digitos(numero);
 
-        printf("El numero %d dio que tiene %d ", numero, resultado);
+        printf("El numero %d dio que la suma de sus digitos es %d ", numero, resultado);
         
         printf("y se esperaba %d, que fue ", esperado);
         if (resultado == esperado)
@@ -108,8 +106,6 @@ int main()
             printf("incorrecto");
         }
         printf(" con %d\n", resultado);
-
     }
-
     return 0;
 }
