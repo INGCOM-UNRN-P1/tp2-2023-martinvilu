@@ -51,7 +51,8 @@ int es_perfecto(unsigned long long int numero) {
     return resultado;
 }
 
-int main() {
+int main()
+{
     unsigned long long int numero = 2;
     int resultado;
 
