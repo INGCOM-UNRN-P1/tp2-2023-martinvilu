@@ -55,7 +55,7 @@ int main() {
     unsigned long long int numero = 2;
     int resultado;
 
-    while (numero < 1000000)
+    while (numero < 10000)
     {
         resultado = es_perfecto(numero);
 
