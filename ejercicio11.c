@@ -28,11 +28,13 @@ propios menos sí mismo. Por ejemplo, el 15 no es un número perfecto, pero el 2
  * @post Devuelve true si el número es perfecto, es decir, la suma de sus divisores propios
  *       (excluyendo a sí mismo) es igual al número mismo.
  */
-int es_perfecto(unsigned long long int numero) {
+int es_perfecto(unsigned long long int numero)
+{
     int resultado = 0;
     unsigned long long int suma_divisores = 0;
     unsigned long long int i = 1;
-    if (numero <= 0) {
+    if (numero <= 0) 
+    {
         printf("Error: El número debe ser un entero positivo.\n");
         resultado = ERA_NEGATIVO;
     }
