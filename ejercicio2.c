@@ -15,14 +15,16 @@ Diseña e implementa una función que calcule la suma de los dígitos de un núm
 unsigned int valor_absoluto(int numero);
 int signo(int numero);
 
-/*
-descripcion
-@param nombre descripcion
-@returns descripcion retorno
-Precondiciones de la funcion
-Postcondiciones de la funcion
-*/
-int suma_digitos(int numero)
+/**
+ * Calcula la suma de los dígitos de un número natural.
+ *
+ * @param numero El número del cual se calculará la suma de dígitos.
+ * @return La suma de los dígitos del número.
+ *
+ * @pre El número debe ser un natural, los numeros negativos seran tratados como positivos.
+ * @post El valor devuelto es la suma de los dígitos del número.
+ */
+unsigned int suma_digitos(int numero)
 {
     int suma = 0;
     numero = valor_absoluto(numero);

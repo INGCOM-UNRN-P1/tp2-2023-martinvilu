@@ -82,7 +82,8 @@ int es_primo(unsigned long long int numero)
     return bandera;
 }
 
-int main() {
+int main()
+{
     int cantidad;
 
     printf("Ingrese la cantidad de números primos a sumar: ");

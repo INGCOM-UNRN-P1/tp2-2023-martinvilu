@@ -10,6 +10,8 @@ Programacion 1 - Ingenieria en computacion
 /*
 Consigna: 
 
+*/
+
 /*
 descripcion
 @param nombre descripcion

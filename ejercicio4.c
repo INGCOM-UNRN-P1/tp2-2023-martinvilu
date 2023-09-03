@@ -39,7 +39,8 @@ int mayor(int primero, int segundo, int tercero)
     return mayor;
 }
 
-int main() {
+int main()
+{
     int uno;
     int dos;
     int tres;

@@ -136,7 +136,8 @@ unsigned long long int valor_absoluto(long long int numero)
 }
 
 
-int main() {
+int main()
+{
     unsigned long long int base;
     int exponente;
 

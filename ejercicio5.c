@@ -40,7 +40,8 @@ int menor_de(int primero, int segundo, int tercero) {
 }
 
 
-int main() {
+int main()
+{
     int uno;
     int dos;
     int tres;
