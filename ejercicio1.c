@@ -80,7 +80,8 @@ unsigned int valor_absoluto(int numero)
 int main()
 {
     // Casos significativos
-    int casos[CASOS][2] = {
+    int casos[CASOS][2] = 
+    {
         {0, 0 },
         {1, 1},
         {10, 2},
