@@ -30,7 +30,8 @@ divisores es menor que 2n. De manera equivalente, es un número para el que la s
  * @post Devuelve true si el número es defectivo, es decir, 
         la suma de sus divisores propios es menor que el número mismo.
  */
-bool es_defectivo(unsigned long long int numero) {
+bool es_defectivo(unsigned long long int numero) 
+{
     unsigned long long int suma_divisores = 0;
     unsigned long long int i = 1;
     

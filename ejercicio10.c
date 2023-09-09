@@ -31,7 +31,8 @@ una distancia en millas a su equivalente en kilómetros.
  * @pre litros debe ser un numero.
  * @post El valor devuelto es la cantidad equivalente en galones.
  */
-double litros_a_galones(double litros) {
+double litros_a_galones(double litros) 
+{
     return litros * 0.264172;
 }
 
@@ -44,7 +45,8 @@ double litros_a_galones(double litros) {
  * @pre galones debe ser un numero.
  * @post El valor devuelto es la cantidad equivalente en litros.
  */
-double galones_a_litros(double galones) {
+double galones_a_litros(double galones) 
+{
     return galones * 3.78541;
 }
 
@@ -57,7 +59,8 @@ double galones_a_litros(double galones) {
  * @pre millas debe ser un numero.
  * @post El valor devuelto es la distancia equivalente en kilómetros.
  */
-double millas_a_kilometros(double millas) {
+double millas_a_kilometros(double millas) 
+{
     return millas * 1.60934;
 }
 
@@ -70,11 +73,13 @@ double millas_a_kilometros(double millas) {
  * @pre kilometros debe ser un numero.
  * @post El valor devuelto es la distancia equivalente en millas.
  */
-double kilometros_a_millas(double kilometros) {
+double kilometros_a_millas(double kilometros) 
+{
     return kilometros * 0.621371;
 }
 
-int main() {
+int main() 
+{
     int opcion;
     double valor;
     double resultado;
@@ -87,7 +92,8 @@ int main() {
     printf("4. Kilómetros a Millas\n");
     scanf("%d", &opcion);
 
-    switch (opcion) {
+    switch (opcion) 
+    {
         case 1:
             printf("Ingrese la cantidad de litros: ");
             scanf("%lf", &valor);

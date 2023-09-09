@@ -30,7 +30,8 @@ términos en una serie de Fibonacci hasta el N-ésimo término.
             termino = 1 -> 1
             si termino es negativo, se retornara 0.
  */
-unsigned long long int fibonacci(int termino) {
+unsigned long long int fibonacci(int termino) 
+{
 
     unsigned long long int uno = 0;
     unsigned long long int dos = 1;
@@ -124,7 +125,8 @@ unsigned long long int valor_absoluto(long long int numero)
  * @param n El número de términos de Fibonacci a considerar.
  * @return La suma de los dígitos de los términos en la serie de Fibonacci.
  */
-unsigned long long int suma_digitos_fibonacci(int n) {
+unsigned long long int suma_digitos_fibonacci(int n) 
+{
     
     unsigned long long int termino = 0;
     unsigned long long int suma_digitos_total = 0;
@@ -141,7 +143,8 @@ unsigned long long int suma_digitos_fibonacci(int n) {
     return suma_digitos_total;
 }
 
-int main() {
+int main() 
+{
     int n;
 
     printf("Ingrese el valor de n (número de términos de Fibonacci): ");

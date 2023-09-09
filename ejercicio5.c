@@ -23,7 +23,8 @@ Escribe una función similar a la anterior, pero que devuelva el menor de tres n
  * @pre Los argumentos primero, segundo y tercero son números enteros válidos.
  * @post El valor devuelto es el número entero más pequeño entre los tres.
  */
-int menor_de(int primero, int segundo, int tercero) {
+int menor_de(int primero, int segundo, int tercero) 
+{
     int minimo = primero;
 
     if (segundo < minimo) 

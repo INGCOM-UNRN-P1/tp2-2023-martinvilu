@@ -69,7 +69,8 @@ unsigned long long int potencia_lenta(unsigned long long int base, int exponente
  * @pre Se esperan dos numeros.
  * @post El valor devuelto es el resultado de la multiplicación de izquierdo por derecho.
  */
-long long int multiplicacion_lenta(long long int izquierdo, long long int derecho) {
+long long int multiplicacion_lenta(long long int izquierdo, long long int derecho) 
+{
     int resultado = 0;
     int multiplicador = valor_absoluto(izquierdo);
     int multiplicando = valor_absoluto(derecho);
